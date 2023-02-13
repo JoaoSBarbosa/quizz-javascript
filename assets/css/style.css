@@ -12,13 +12,7 @@ body {
     flex-direction: column;
     background-color: #333;
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to top,#00bdfc,#00b4fc, #005bc5, #181848);
-
-
     background: linear-gradient(to top,#ff8830,#5e5e5e,#383845, #383845, #12122b);
-
-
-  
   
 }
 
@@ -80,7 +74,6 @@ h1 {
 }
 .option:hover {
     background-color: rgba(255, 136, 48, 0.7);
-
     color: #ffffff;
 }
 
@@ -118,14 +111,12 @@ h1 {
     border: 0;
     border-radius: 10px;
     background-color: #069e8c;
-    color: #CCC;
     color: #FFF;
     padding: 10px;
     margin-top: 20px;
     cursor: pointer;
 }
 .scoreArea button:hover {
-    background-color: rgba(251, 98, 2, 0.4);
     background-color: #a2fa1b;
     color: #000;
 }
