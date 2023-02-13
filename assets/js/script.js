@@ -1,10 +1,14 @@
 let currentQuestion = 0;
+let correctAnswers = 0;
 
 showQuestion();
 
 function showQuestion(){
    if(questions[currentQuestion]){
       let q = questions[currentQuestion];
+
+      let percentage = Math.floor((currentQuestion / questions.length) * 100);
+      document.querySelector('.progress--bar').style.width = `${percentage}%`;
 
       document.querySelector('.scoreArea').style.display = 'none';
       document.querySelector('.questionArea').style.display = 'block';
@@ -29,8 +33,8 @@ function showQuestion(){
 function optionClickEvent(e){
    let clickedOption = parseInt(e.target.getAttribute('data-op'));
    if(questions[currentQuestion].answer === clickedOption){
-      console.log('Acertou')
-   }else{
-      console.log('Errou')
+      correctAnswers++;
    }
+   currentQuestion++;
+   showQuestion();
 }
