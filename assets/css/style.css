@@ -85,7 +85,7 @@ h1 {
 }
 
 .scoreArea {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 20px;
     margin: 10px;
@@ -117,14 +117,17 @@ h1 {
 .scoreArea button {
     border: 0;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #069e8c;
     color: #CCC;
+    color: #FFF;
     padding: 10px;
     margin-top: 20px;
     cursor: pointer;
 }
 .scoreArea button:hover {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(251, 98, 2, 0.4);
+    background-color: #a2fa1b;
+    color: #000;
 }
 
 footer {
@@ -137,5 +140,5 @@ footer a{
     color: #ffffff
 }
 footer a:hover{
-    color: #000000;
+    color: #57f900;
 }
