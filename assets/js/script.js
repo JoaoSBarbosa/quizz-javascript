@@ -12,11 +12,25 @@ function showQuestion(){
 
       let optionsHtml = '';
       for(let i in q.options){
-         optionsHtml += `<div class="option"><span>${parseInt(i)+1}</span>${q.options[i]}</div>`;
+         optionsHtml += `<div data-op="${i}" class="option"><span>${parseInt(i)+1}</span>${q.options[i]}</div>`;
       }
       document.querySelector('.options').innerHTML = optionsHtml;
+
+      // Adicionando evento de click no elemento dinâmico 
+      document.querySelectorAll('.options .option').forEach(item =>{
+         item.addEventListener('click', optionClickEvent);
+      })
    }else{
 
    }
 
+}
+
+function optionClickEvent(e){
+   let clickedOption = parseInt(e.target.getAttribute('data-op'));
+   if(questions[currentQuestion].answer === clickedOption){
+      console.log('Acertou')
+   }else{
+      console.log('Errou')
+   }
 }
